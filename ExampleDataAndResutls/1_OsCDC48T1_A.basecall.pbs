@@ -1,0 +1,10 @@
+
+#BSUB -L /bin/bash 
+#BSUB -J BQ.1_OsCDC48T1_A
+#BSUB -n 1
+#BSUB -e %J.err 
+#BSUB -o %J.out
+#BSUB -q fast
+
+flash -d merge -M 150 -O -o 1_OsCDC48T1_A ./1/OsCDC48T1_A/R1.fastq ./1/OsCDC48T1_A/R2.fastq 
+perl /public-supool/home/gaolab/scripts/BaseCallV2.pl merge/1_OsCDC48T1_A.extendedFrags.fastq OSCDC48T1 1_OsCDC48T1_A.merge > 1_OsCDC48T1_A.merge.txt
