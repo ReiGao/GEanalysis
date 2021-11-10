@@ -1,0 +1,2 @@
+Group	Filename	Mutated	ReferenceSequence	All	Desired	Wildtype	Byproducts
+OsCDC48T1	1_OsCDC48T1_A.merge.detil.csv	TTCTGATTAATGGCATTAT	TTCTGATTAATGGCCCGGAGATTAT	10543	3336	5810	1397
